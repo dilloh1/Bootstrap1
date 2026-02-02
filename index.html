@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beanflux</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,10 +14,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-  </head>
+</head>
+<body>
 
-  <body>
-    <!-- navbar start -->
+        <!-- navbar start -->
     <style>
       .navbar-brand {
         font-weight: bolder;
@@ -110,12 +110,226 @@
       </button>
     </div>
     <!-- isi awal end -->
+    
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+     <!-- melayani start -->
+<section id="layanan" style="background-color: #6b3e26; padding: 50px 20px;">
+  <div style="text-align: center;">
+    <h2 style="color: #fffbe9; font-size: 32px; margin-bottom: 20px;">Kami Melayani</h2>
+   
+  </div>
+  
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; max-width: 1000px; margin: 40px auto 0;" >
+    
+    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/633/633652.png" alt="Kopi" style="width: 60px; margin-bottom: 15px;">
+      <h3 style="color: #6b3e26;">Kopi Spesial</h3>
+      <p style="color: #3b2416;">Berbagai varian kopi lokal dan internasional</p>
+    </div>
+
+    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3655/3655608.png" alt="Makanan" style="width: 60px; margin-bottom: 15px;">
+      <h3 style="color: #6b3e26;">Makanan Ringan</h3>
+      <p style="color: #3b2416;">Temani kopi Anda dengan camilan nikmat</p>
+    </div>
+
+    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Takeaway" style="width: 60px; margin-bottom: 15px;">
+      <h3 style="color: #6b3e26;">Takeaway</h3>
+      <p style="color: #3b2416;">Pesan dan bawa pulang dengan cepat & praktis</p>
+    </div>
+
+    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2901/2901643.png" alt="Wifi" style="width: 60px; margin-bottom: 15px;">
+      <h3 style="color: #6b3e26;">Free Wi-Fi</h3>
+      <p style="color: #3b2416;">Nikmati internet cepat untuk kerja atau bersantai</p>
+    </div>
+
+  </div>
+
+  </div>
+</section>
+  <!-- melayani end -->
+
+<!-- produk -->
+ <style>
+
+
+
+  .hovered-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .hovered-card .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-img-top {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 15px;
+    color: #5c4b3a;
+  }
+
+  .btn-warning {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #b35e21;
+    border: none;
+  }
+
+  .btn-warning:hover {
+    background-color: #52301a;
+  }
+
+  h2.section-title {
+    font-family: 'Times New Roman', Times, serif;
+    color: #6b3e26;
+    font-size: 36px;
+  }
+</style>
+
+<div class="container-fluid py-5" style="background-color: #1d1d1d;">
+  <div class="container">
+    <h2 class="section-title text-center mb-5" style="color: rgb(230, 230, 230);">Paling Banyak Dibeli</h2>
+
+    <div class="row">     
+      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+        <div class="card h-100">
+          
+            <img src="https://asset.kompas.com/crops/_SfcFYf71wzjEp-eNLHB_subNpI=/0x0:1000x667/750x500/data/photo/2020/10/05/5f7a1e1a209d9.jpg" class="card-img-top img-fluid" alt="Vanilla Latte" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning mt-2"><b>espresso</b></h5>
+            <p class="card-text">kopi pekat yang diseduh dengan air panas bertekanan tinggi melalui bubuk kopi yang digiling halus.</p>
+            <h4 class="text-warning">Rp. 20.000</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+        <div class="card h-100">
+         
+            <img src="https://www.bitkaorigin.com/assets/myback/js/elFinder/files/bitka-serba-serbi-latte-art-yang-wajib-pecinta-kopi-ketahui-foto1.jpg" class="card-img-top img-fluid" alt="Cookies & Cream" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning mt-2"><b>Latte</b></h5>
+            <p class="card-text">Perpaduan espresso dan susu yang berasal dari italia</p>
+            <h4 class="text-warning">Rp. 21.000</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+        <div class="card h-100">
+         
+            <img src="https://media.istockphoto.com/id/1325991061/photo/matcha-latte-green-milk-foam-cup-on-wood-table-at-cafe-trendy-powered-tea-trend-from-japan.jpg?s=612x612&w=0&k=20&c=a7cV9mdPwPj93BrxoFrJXEdA71RsOnXIOzVF90CYPsQ=" class="card-img-top img-fluid" alt="Mocchacino" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning mt-2"><b>Matcha Latte</b></h5>
+            <p class="card-text"> minuman yang terbuat dari campuran bubuk matcha, air panas, dan susu</p>
+            <h4 class="text-warning">Rp. 20.000</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+        <div class="card h-100">
+       
+            <img src="https://outerbloom.com/cdn/shop/files/CLRKUE1001_Outerbloom-Tiramisu-Cake_3.jpg" class="card-img-top img-fluid" alt="Matcha Latte" />
+          </a>
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning mt-2"><b>Tiramisu</b></h5>
+            <p class="card-text">hidangan penutup asal Italia yang terkenal dengan lapisan-lapisannya yang lembut dan rasa kopi yang kuat.</p>
+            <h4 class="text-warning">Rp. 19.000</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4 d-flex justify-content-center">
+      <a href="Produk.html" class="btn btn-warning btn-lg text-light">Lihat Lainnya</a>
+    </div>
+  </div>
+</div>
+<!-- produk -->
+
+
+ <!-- reservasi -->
+<form style="max-width: 500px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 0px;">
+  <h3 style="text-align: center; color: #6b3e26; margin-bottom: px;">Reservasi</h3>
+  <p style="margin-bottom:25px;">Jangan Sampai Kehabisan Meja, Reservasi Meja Sekarang!!</p>
+
+
+  <div class="mb-3">
+    <label for="nama" class="form-label" style="color: #3b2416;">Nama</label>
+    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="kontak" class="form-label" style="color: #3b2416;">No. Kontak</label>
+    <input type="tel" class="form-control" id="kontak" name="kontak" placeholder="08xxxxxxxxxx" required>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="meja" class="form-label" style="color: #3b2416;">Jumlah Meja</label>
+    <input type="number" class="form-control" id="meja" name="meja" placeholder="Contoh: 2" min="1" required>
+  </div>
+
+
+  <div class="d-grid mt-4">
+    <button id="" type="submit" class="btn btn-warning text-white">Kirim Pemesanan</button>
+  </div>
+</form>
+  <!-- reservasi -->
+
+
+  <!-- kontak -->
+<section class="py-5" style="background-color: #525252;">
+  <div class="container text-center">
+    <h2 class="mb-4" style="color: #e2e2e2;">Kontak Kami</h2>
+    <p class="mb-4" style="color: #969696;">Hubungi kami melalui media sosial di bawah ini:</p>
+
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6289512039025" target="_blank" class="text-success fs-3">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/fadhil.1019" target="_blank" class="text-danger fs-3">
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      
+
+      <!-- Email -->
+        <a href="mailto:fadhilnada12@gmail.com" class="text-dark fs-3">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+    </div>
+  </div>
+</section>
+ <!-- kontak -->
+
+
+<!-- footer -->
+<p style="background-color: rgb(37, 37, 37); text-align: center; margin: 0; padding: 3px; color:white;">&copy;2025 BeanFlux , created by fadhil</p>
+ <!-- footer -->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 </html>
-
