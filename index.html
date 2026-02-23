@@ -1,335 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <title>BeanFlux</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
+
 <body>
 
-        <!-- navbar start -->
+    <!-- navbar start -->
     <style>
-      .navbar-brand {
-        font-weight: bolder;
-        color: whitesmoke;
-      }
-      .nav-item a {
-        font-weight: bold;
-        color: whitesmoke;
-      }
+        .navbar-brand {
+            font-weight: bolder;
+            color: whitesmoke;
+        }
+
+        .nav-item a {
+            font-weight: bold;
+            color: whitesmoke;
+        }
     </style>
 
-    <nav
-      class="navbar navbar-expand-lg shadow-sm sticky-top"
-      style="background-color: #b35e21"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">BeanFlux</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Fitur</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-primary ms-lg-3" href="#">Menu</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color: #b35e21">
+        <div class="container">
+            <a class="navbar-brand" href="#">BeanFlux</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="#">Menu</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- navbar end -->
 
     <!-- isi awal start -->
     <style>
-      .carousel-inner {
-        max-height: 500px;
-      }
+        .carousel-inner {
+            max-height: 500px;
+        }
 
-      .carousel-item img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-      }
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
     </style>
 
-    <div
-      id="carouselExampleInterval"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="aset/g1.jpg" class="d-block w-100" alt="Gambar 1" />
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="aset/g1.jpg" class="d-block w-100" alt="Gambar 1" />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="aset/g2.jpg" class="d-block w-100" alt="Gambar 2" />
+            </div>
+            <div class="carousel-item">
+                <img src="aset/g3.jpg" class="d-block w-100" alt="Gambar 3" />
+            </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="aset/g2.jpg" class="d-block w-100" alt="Gambar 2" />
-        </div>
-        <div class="carousel-item">
-          <img src="aset/g3.jpg" class="d-block w-100" alt="Gambar 3" />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <!-- isi awal end -->
-    
-
-     <!-- melayani start -->
-<section id="layanan" style="background-color: #6b3e26; padding: 50px 20px;">
-  <div style="text-align: center;">
-    <h2 style="color: #fffbe9; font-size: 32px; margin-bottom: 20px;">Kami Melayani</h2>
-   
-  </div>
-  
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; max-width: 1000px; margin: 40px auto 0;" >
-    
-    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
-      <img src="https://cdn-icons-png.flaticon.com/512/633/633652.png" alt="Kopi" style="width: 60px; margin-bottom: 15px;">
-      <h3 style="color: #6b3e26;">Kopi Spesial</h3>
-      <p style="color: #3b2416;">Berbagai varian kopi lokal dan internasional</p>
-    </div>
-
-    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
-      <img src="https://cdn-icons-png.flaticon.com/512/3655/3655608.png" alt="Makanan" style="width: 60px; margin-bottom: 15px;">
-      <h3 style="color: #6b3e26;">Makanan Ringan</h3>
-      <p style="color: #3b2416;">Temani kopi Anda dengan camilan nikmat</p>
-    </div>
-
-    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
-      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Takeaway" style="width: 60px; margin-bottom: 15px;">
-      <h3 style="color: #6b3e26;">Takeaway</h3>
-      <p style="color: #3b2416;">Pesan dan bawa pulang dengan cepat & praktis</p>
-    </div>
-
-    <div style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
-      <img src="https://cdn-icons-png.flaticon.com/512/2901/2901643.png" alt="Wifi" style="width: 60px; margin-bottom: 15px;">
-      <h3 style="color: #6b3e26;">Free Wi-Fi</h3>
-      <p style="color: #3b2416;">Nikmati internet cepat untuk kerja atau bersantai</p>
-    </div>
-
-  </div>
-
-  </div>
-</section>
-  <!-- melayani end -->
-
-<!-- produk -->
- <style>
 
 
+    <!-- melayani start -->
+    <section id="layanan" style="background-color: #6b3e26; padding: 50px 20px;">
+        <div style="text-align: center;">
+            <h2 style="color: #fffbe9; font-size: 32px; margin-bottom: 20px;">Kami Melayani</h2>
 
-  .hovered-card .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-
-  .hovered-card .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  }
-
-  .card-img-top {
-    height: 220px;
-    object-fit: cover;
-  }
-
-  .card-title {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-  }
-
-  .card-text {
-    font-size: 15px;
-    color: #5c4b3a;
-  }
-
-  .btn-warning {
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 30px;
-    font-weight: bold;
-    background-color: #b35e21;
-    border: none;
-  }
-
-  .btn-warning:hover {
-    background-color: #52301a;
-  }
-
-  h2.section-title {
-    font-family: 'Times New Roman', Times, serif;
-    color: #6b3e26;
-    font-size: 36px;
-  }
-</style>
-
-<div class="container-fluid py-5" style="background-color: #1d1d1d;">
-  <div class="container">
-    <h2 class="section-title text-center mb-5" style="color: rgb(230, 230, 230);">Paling Banyak Dibeli</h2>
-
-    <div class="row">     
-      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
-        <div class="card h-100">
-          
-            <img src="https://asset.kompas.com/crops/_SfcFYf71wzjEp-eNLHB_subNpI=/0x0:1000x667/750x500/data/photo/2020/10/05/5f7a1e1a209d9.jpg" class="card-img-top img-fluid" alt="Vanilla Latte" />
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title text-warning mt-2"><b>espresso</b></h5>
-            <p class="card-text">kopi pekat yang diseduh dengan air panas bertekanan tinggi melalui bubuk kopi yang digiling halus.</p>
-            <h4 class="text-warning">Rp. 20.000</h4>
-          </div>
         </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
-        <div class="card h-100">
-         
-            <img src="https://www.bitkaorigin.com/assets/myback/js/elFinder/files/bitka-serba-serbi-latte-art-yang-wajib-pecinta-kopi-ketahui-foto1.jpg" class="card-img-top img-fluid" alt="Cookies & Cream" />
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title text-warning mt-2"><b>Latte</b></h5>
-            <p class="card-text">Perpaduan espresso dan susu yang berasal dari italia</p>
-            <h4 class="text-warning">Rp. 21.000</h4>
-          </div>
+
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; max-width: 1000px; margin: 40px auto 0;">
+
+            <div
+                style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/633/633652.png" alt="Kopi"
+                    style="width: 60px; margin-bottom: 15px;">
+                <h3 style="color: #6b3e26;">Kopi Spesial</h3>
+                <p style="color: #3b2416;">Berbagai varian kopi lokal dan internasional</p>
+            </div>
+
+            <div
+                style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3655/3655608.png" alt="Makanan"
+                    style="width: 60px; margin-bottom: 15px;">
+                <h3 style="color: #6b3e26;">Makanan Ringan</h3>
+                <p style="color: #3b2416;">Temani kopi Anda dengan camilan nikmat</p>
+            </div>
+
+            <div
+                style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" alt="Takeaway"
+                    style="width: 60px; margin-bottom: 15px;">
+                <h3 style="color: #6b3e26;">Takeaway</h3>
+                <p style="color: #3b2416;">Pesan dan bawa pulang dengan cepat & praktis</p>
+            </div>
+
+            <div
+                style="background: #fff8ed; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/512/2901/2901643.png" alt="Wifi"
+                    style="width: 60px; margin-bottom: 15px;">
+                <h3 style="color: #6b3e26;">Free Wi-Fi</h3>
+                <p style="color: #3b2416;">Nikmati internet cepat untuk kerja atau bersantai</p>
+            </div>
+
         </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
-        <div class="card h-100">
-         
-            <img src="https://media.istockphoto.com/id/1325991061/photo/matcha-latte-green-milk-foam-cup-on-wood-table-at-cafe-trendy-powered-tea-trend-from-japan.jpg?s=612x612&w=0&k=20&c=a7cV9mdPwPj93BrxoFrJXEdA71RsOnXIOzVF90CYPsQ=" class="card-img-top img-fluid" alt="Mocchacino" />
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title text-warning mt-2"><b>Matcha Latte</b></h5>
-            <p class="card-text"> minuman yang terbuat dari campuran bubuk matcha, air panas, dan susu</p>
-            <h4 class="text-warning">Rp. 20.000</h4>
-          </div>
+
         </div>
-      </div>
-      <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
-        <div class="card h-100">
-       
-            <img src="https://outerbloom.com/cdn/shop/files/CLRKUE1001_Outerbloom-Tiramisu-Cake_3.jpg" class="card-img-top img-fluid" alt="Matcha Latte" />
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title text-warning mt-2"><b>Tiramisu</b></h5>
-            <p class="card-text">hidangan penutup asal Italia yang terkenal dengan lapisan-lapisannya yang lembut dan rasa kopi yang kuat.</p>
-            <h4 class="text-warning">Rp. 19.000</h4>
-          </div>
+    </section>
+    <!-- melayani end -->
+
+    <!-- produk -->
+    <style>
+        .hovered-card .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .hovered-card .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img-top {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+        }
+
+        .card-text {
+            font-size: 15px;
+            color: #5c4b3a;
+        }
+
+        .btn-warning {
+            padding: 10px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            background-color: #b35e21;
+            border: none;
+        }
+
+        .btn-warning:hover {
+            background-color: #52301a;
+        }
+
+        h2.section-title {
+            font-family: 'Times New Roman', Times, serif;
+            color: #6b3e26;
+            font-size: 36px;
+        }
+    </style>
+
+    <div class="container-fluid py-5" style="background-color: #1d1d1d;">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" style="color: rgb(230, 230, 230);">Paling Banyak Dibeli</h2>
+
+            <div class="row">
+                <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+                    <div class="card h-100">
+
+                        <img src="https://asset.kompas.com/crops/_SfcFYf71wzjEp-eNLHB_subNpI=/0x0:1000x667/750x500/data/photo/2020/10/05/5f7a1e1a209d9.jpg"
+                            class="card-img-top img-fluid" alt="Vanilla Latte" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning mt-2"><b>espresso</b></h5>
+                            <p class="card-text">kopi pekat yang diseduh dengan air panas bertekanan tinggi melalui
+                                bubuk kopi yang digiling halus.</p>
+                            <h4 class="text-warning">Rp. 20.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+                    <div class="card h-100">
+
+                        <img src="https://www.bitkaorigin.com/assets/myback/js/elFinder/files/bitka-serba-serbi-latte-art-yang-wajib-pecinta-kopi-ketahui-foto1.jpg"
+                            class="card-img-top img-fluid" alt="Cookies & Cream" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning mt-2"><b>Latte</b></h5>
+                            <p class="card-text">Perpaduan espresso dan susu yang berasal dari italia</p>
+                            <h4 class="text-warning">Rp. 21.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+                    <div class="card h-100">
+
+                        <img src="https://media.istockphoto.com/id/1325991061/photo/matcha-latte-green-milk-foam-cup-on-wood-table-at-cafe-trendy-powered-tea-trend-from-japan.jpg?s=612x612&w=0&k=20&c=a7cV9mdPwPj93BrxoFrJXEdA71RsOnXIOzVF90CYPsQ="
+                            class="card-img-top img-fluid" alt="Mocchacino" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning mt-2"><b>Matcha Latte</b></h5>
+                            <p class="card-text"> minuman yang terbuat dari campuran bubuk matcha, air panas, dan susu
+                            </p>
+                            <h4 class="text-warning">Rp. 20.000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 hovered-card mb-4">
+                    <div class="card h-100">
+
+                        <img src="https://outerbloom.com/cdn/shop/files/CLRKUE1001_Outerbloom-Tiramisu-Cake_3.jpg"
+                            class="card-img-top img-fluid" alt="Matcha Latte" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning mt-2"><b>Tiramisu</b></h5>
+                            <p class="card-text">hidangan penutup asal Italia yang terkenal dengan lapisan-lapisannya
+                                yang lembut dan rasa kopi yang kuat.</p>
+                            <h4 class="text-warning">Rp. 19.000</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 d-flex justify-content-center">
+                <a href="Produk.html" class="btn btn-warning btn-lg text-light">Lihat Lainnya</a>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="mt-4 d-flex justify-content-center">
-      <a href="Produk.html" class="btn btn-warning btn-lg text-light">Lihat Lainnya</a>
+    <!-- produk -->
+
+    <!-- Review -->
+    <style>
+        .coklat {
+            background-color: #6b3e26;
+        }
+    </style>
+    <div class="container-fluid py-5 main-color coklat">
+        <div class="container">
+            <h2 style="font-family: 'Times New Roman', Times, serif;" class="text-light text-center mb-5"><strong>Apa
+                    Kata Customer</strong></h2>
+
+            <div class="row" data-masonry='{"percentPosition": true }'>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Take away gak pake lama, kerja Karyawannya cepat</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Satria Baja Blue</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Minumannya seger, banyak promo, sering dikasih diskon</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">saras 007</figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Pelayanannya Bagus, Karyawannya ramah-ramah</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Kapten Tsubasa</figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Delivery cepat</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Power Ranger Merah</figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Tempatnya bersih</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">Satria Baja Blue</figcaption>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                        <blockquote class="blockquote">
+                            <p>Makanannya Enak-enak</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Panji Manusia Millenium
+                        </figcaption>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Ratione voluptate minus asperiores eveniet? Beatae, ex est
+                            ipsum porro expedita culpa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<!-- produk -->
+
+    <!-- Review -->
+
+    <!-- reservasi -->
+    <form style="max-width: 500px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 0px;">
+        <h3 style="text-align: center; color: #6b3e26; margin-bottom: px;">Reservasi</h3>
+        <p style="margin-bottom:25px;">Jangan Sampai Kehabisan Meja, Reservasi Meja Sekarang!!</p>
 
 
- <!-- reservasi -->
-<form style="max-width: 500px; margin: auto; background-color: #ffffff; padding: 30px; border-radius: 0px;">
-  <h3 style="text-align: center; color: #6b3e26; margin-bottom: px;">Reservasi</h3>
-  <p style="margin-bottom:25px;">Jangan Sampai Kehabisan Meja, Reservasi Meja Sekarang!!</p>
+        <div class="mb-3">
+            <label for="nama" class="form-label" style="color: #3b2416;">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
 
 
-  <div class="mb-3">
-    <label for="nama" class="form-label" style="color: #3b2416;">Nama</label>
-    <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
-  </div>
+        <div class="mb-3">
+            <label for="kontak" class="form-label" style="color: #3b2416;">No. Kontak</label>
+            <input type="tel" class="form-control" id="kontak" name="kontak" placeholder="08xxxxxxxxxx" required>
+        </div>
 
 
-  <div class="mb-3">
-    <label for="kontak" class="form-label" style="color: #3b2416;">No. Kontak</label>
-    <input type="tel" class="form-control" id="kontak" name="kontak" placeholder="08xxxxxxxxxx" required>
-  </div>
+        <div class="mb-3">
+            <label for="meja" class="form-label" style="color: #3b2416;">Jumlah Meja</label>
+            <input type="number" class="form-control" id="meja" name="meja" placeholder="Contoh: 2" min="1" required>
+        </div>
 
 
-  <div class="mb-3">
-    <label for="meja" class="form-label" style="color: #3b2416;">Jumlah Meja</label>
-    <input type="number" class="form-control" id="meja" name="meja" placeholder="Contoh: 2" min="1" required>
-  </div>
+        <div class="d-grid mt-4">
+            <button id="" type="submit" class="btn btn-warning text-white">Kirim Pemesanan</button>
+        </div>
+    </form>
+    <!-- reservasi -->
 
 
-  <div class="d-grid mt-4">
-    <button id="" type="submit" class="btn btn-warning text-white">Kirim Pemesanan</button>
-  </div>
-</form>
-  <!-- reservasi -->
+    <!-- kontak -->
+    <section class="py-5" style="background-color: #525252;">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: #e2e2e2;">Kontak Kami</h2>
+            <p class="mb-4" style="color: #969696;">Hubungi kami melalui media sosial di bawah ini:</p>
+
+            <div class="d-flex justify-content-center gap-4 flex-wrap">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6289512039025" target="_blank" class="text-success fs-3">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/fadhil.1019" target="_blank" class="text-danger fs-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
 
 
-  <!-- kontak -->
-<section class="py-5" style="background-color: #525252;">
-  <div class="container text-center">
-    <h2 class="mb-4" style="color: #e2e2e2;">Kontak Kami</h2>
-    <p class="mb-4" style="color: #969696;">Hubungi kami melalui media sosial di bawah ini:</p>
 
-    <div class="d-flex justify-content-center gap-4 flex-wrap">
-      <!-- WhatsApp -->
-      <a href="https://wa.me/6289512039025" target="_blank" class="text-success fs-3">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-
-      <!-- Instagram -->
-      <a href="https://instagram.com/fadhil.1019" target="_blank" class="text-danger fs-3">
-        <i class="bi bi-instagram"></i>
-      </a>
-
-      
-
-      <!-- Email -->
-        <a href="mailto:fadhilnada12@gmail.com" class="text-dark fs-3">
-        <i class="bi bi-envelope-fill"></i>
-      </a>
-    </div>
-  </div>
-</section>
- <!-- kontak -->
+                <!-- Email -->
+                <a href="mailto:fadhilnada12@gmail.com" class="text-dark fs-3">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- kontak -->
 
 
-<!-- footer -->
-<p style="background-color: rgb(37, 37, 37); text-align: center; margin: 0; padding: 3px; color:white;">&copy;2025 BeanFlux , created by fadhil</p>
- <!-- footer -->
+    <!-- footer -->
+    <p style="background-color: rgb(37, 37, 37); text-align: center; margin: 0; padding: 3px; color:white;">&copy;2025
+        BeanFlux , created by fadhil</p>
+    <!-- footer -->
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
