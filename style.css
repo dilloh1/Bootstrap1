@@ -18,6 +18,12 @@
   border: none;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: linear 0.2s;
+}
+
 /* Carousel */
 .carousel-inner {
   max-height: 500px;
@@ -35,7 +41,7 @@
 }
 
 .promo-title {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #6b3e26;
   font-weight: bold;
   font-size: 36px;
@@ -69,7 +75,8 @@
   border: none;
 }
 
-.dark-card .promo-name, .dark-card p {
+.dark-card .promo-name,
+.dark-card p {
   color: white !important;
 }
 
@@ -83,7 +90,7 @@
   transform: rotate(45deg);
   font-weight: bold;
   font-size: 0.8rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .promo-name {
@@ -99,7 +106,7 @@
   border: 1px solid #b35e21;
   border-radius: 5px;
   font-size: 0.85rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   color: #b35e21;
 }
@@ -215,43 +222,45 @@
 
 /* Review  */
 .review-section {
-    background-color: #6b3e26;
-    padding: 60px 0;
+  background-color: #6b3e26;
+  padding: 60px 0;
 }
 
 .review-title {
-    font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
 }
 
 .review-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 12px;
-    background-color: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
 
 .review-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .review-card .blockquote p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #3b2416;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3b2416;
 }
 
 .review-card .blockquote-footer {
-    color: #b35e21; 
-    font-weight: bold;
+  color: #b35e21;
+  font-weight: bold;
 }
 
 .review-text {
-    font-size: 0.9rem;
-    color: #6c757d;
-    line-height: 1.5;
-    margin-top: 10px;
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 /* Form Reservasi */
@@ -266,11 +275,11 @@
   color: #6b3e26;
 }
 
-.btn-res{
+.btn-res {
   background-color: #793b19;
 }
 
-.btn-res:hover{
+.btn-res:hover {
   background-color: #3b2416;
 }
 
@@ -312,4 +321,18 @@
 
 .footer-icons a:hover {
   color: #fff;
+}
+
+/* page produk */
+
+/* produkBaner */
+.produk-banner {
+  height: 50vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(aset/banner.jpg);
+}
+
+.subscribe {
+  background-color: #2b170c;
 }
